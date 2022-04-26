@@ -2,164 +2,245 @@
 <html>
 <body>
 <style>
-    .h1 {
-      font-family: Arial, Helvetica, sans-serif;
-    }
-    .center {
-      margin: auto;
-      width: 50%;
-      text-align: center;
-    }
-    
-    .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      padding: 12px 16px;
-      z-index: 1;
-    }
-    
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    </style>
-    
-    <div class="center">
-    <h2 class="h1">Southern Connecticut State University</h2>
-    <h3 class="h1">Class Search</h3>
+  .h1 {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .center {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+</style>
+
+<div class="center">
+<h2 class="h1">Southern Connecticut State University</h2>
+<h3 class="h1">Class Search</h3>
+</div>
+
+<hr>
+
+<div class="center">
+<a href="url">Home</a>
+<a href="url">Add/Drop</a>
+<a href="url">Class Search</a>
+<a href="url">Degree Evaluation</a>
+</div>
+
+<hr>
+
+<div class="center">
+  <h3 class="h1">Select Term:</h3>
+  <select name="terms" id="terms">
+    <option value="fall22">Summer 2022</option>
+    <option value="fall22">Fall 2022</option>
+    <option value="fall22">Winter 2022</option>
+    <option value="fall22">Spring 2023</option>
+  </select>
+</div>
+
+<br>
+
+<div class="center">
+  <h3 class="h1">Select Subject:</h3>
+  <select name="subjects" id="subjects">
+    <option value="professor">All</option>
+    <option value="accounting">Accounting</option>
+    <option value="anthropology">Anthropology</option>
+    <option value="art">Art</option>
+    <option value="businessAdmin">Business Administration</option>
+    <option value="biology">Biology</option>
+    <option value="chemistry">Chemistry</option>
+    <option value="cis">Computer Science</option>
+    <option value="communication">Communication</option>
+    <option value="education">Economics</option>
+    <option value="cs">Education</option>
+    <option value="cs">English</option>
+    <option value="cs">French</option>
+    <option value="cs">German</option>
+    <option value="cs">Geography</option>
+    <option value="cs">Graphic Design</option>
+    <option value="cs">History</option>
+    <option value="cs">Humanities</option>
+    <option value="cs">Japanese</option>
+    <option value="cs">Literature</option>
+    <option value="cs">Logistics</option>
+    <option value="cs">Marketing</option>
+    <option value="cs">Mathematics</option>
+    <option value="cs">Music</option>
+    <option value="cs">Networking</option>
+    <option value="cs">Nutrition</option>
+    <option value="cs">Philosophy</option>
+    <option value="cs">Photography</option>
+    <option value="cs">Political Science</option>
+    <option value="cs">Psychology</option>
+    <option value="cs">Sociology</option>
+    <option value="cs">Spanish</option>
+    <option value="cs">Special Education</option>
+    <option value="cs">Teaching</option>
+    <option value="cs">Theater</option>
+    <option value="cs">Web Development</option>
+  </select>
+  </div>
+</div>
+
+<br>
+
+<div class="center">
+  <h3 class="h1">Select Credits:</h3>
+  <select name="credits" id="credits">
+    <option value="professor">All</option>
+    <option value="credits">1</option>
+    <option value="credits">2</option>
+    <option value="credits">3</option>
+    <option value="credits">4</option>
+  </select>
+</div>
+
+<br>
+
+<div class="center">
+  <h3 class="h1">Select Professor:</h3>
+  <select name="professor" id="professor">
+    <option value="professor">All</option>
+    <option value="professor">Adams, John</option>
+    <option value="professor">Arthur, Chester</option>
+    <option value="professor">Buchanan, James</option>
+    <option value="professor">Carter, Jimmy</option>
+    <option value="professor">Cleveland, Grover</option>
+    <option value="professor">Coolidge, Calvin</option>
+    <option value="professor">Eisenhower, Dwight</option>
+    <option value="professor">Fillmore, Millard</option>
+    <option value="professor">Ford, Gerald</option>
+    <option value="professor">Garfield, James</option>
+    <option value="professor">Grant, Ulysses</option>
+    <option value="professor">Harding, Warren</option>
+    <option value="professor">Harrison, William</option>
+    <option value="professor">Hayes, Rutherford</option>
+    <option value="professor">Hoover, Herbert</option>
+    <option value="professor">Jackson, Andrew</option>
+    <option value="professor">Jefferson, Thomas</option>
+    <option value="professor">Johnson, Andrew</option>
+    <option value="professor">Johnson, Lyndon</option>
+    <option value="professor">Kennedy, John</option>
+    <option value="professor">Lincoln, Abraham</option>
+    <option value="professor">Madison, James</option>
+    <option value="professor">McKinley, William</option>
+    <option value="professor">Monroe, James</option>
+    <option value="professor">Nixon, Richard</option>
+    <option value="professor">Pierce, Franklin</option>
+    <option value="professor">Polk, James</option>
+    <option value="professor">Roosevelt, Franklin</option>
+    <option value="professor">Roosevelt, Theodore</option>
+    <option value="professor">Taft, William</option>
+    <option value="professor">Taylor, Zachary</option>
+    <option value="professor">Truman, Harry</option>
+    <option value="professor">Tyler, John</option>
+    <option value="professor">Van Buren, Martin</option>
+    <option value="professor">Washington, George</option>
+    <option value="professor">Wilson, Woodrow</option>
+  </select>
+
+</div>
+
+<br>
+
+<div class="center">
+  <h3 class="h1">Select Location:</h3>
+    <div>
+      <input type="radio" id="InPerson" name="drone" value="InPerson"
+              checked>
+      <label for="huey" class="h1">In-Person</label>
     </div>
-    <hr>
-    <div class="center">
-    <a href="url">Home</a>
-    <a href="url">Add/Drop</a>
-    <a href="url">Class Search</a>
-    <a href="url">Degree Evaluation</a>
+    <div>
+      <input type="radio" id="Hybrid" name="drone" value="Hybrid">
+      <label for="dewey" class="h1">Hybrid</label>
     </div>
-    <hr>
-    <div class="center">
-      <h3 class="h1">Select Term:</h3>
-      <div class="dropdown">
-        <span class="h1">Term</span>
-        <div class="dropdown-content">
-        <p class="h1">Fall 2022</p>
-        <p class="h1">Spring 2022</p>
-        </div>
-      </div>
+    <div>
+      <input type="radio" id="Remote" name="drone" value="Remote">
+      <label for="louie" class="h1">Remote</label>
     </div>
-    <br>
-    <div class="center">
-      <h3 class="h1">Select Subjects:</h3>
-      <div class="dropdown">
-        <span class="h1">Subject</span>
-        <div class="dropdown-content">
-        <p class="h1">Computer Science</p>
-        <p class="h1">Biology</p>
-        <p class="h1">Mathematics</p>
-        </div>
-      </div>
+</div>
+<br>
+<div class="center">
+  <h3 class="h1">Select General Education:</h3>
+  <select name="professor" id="professor">
+    <option value="professor">All</option>
+    <option value="professor">Critical Thinking (T1)</option>
+    <option value="professor">1st Year Experience (T1)</option>
+    <option value="professor">Multilingual Communication (T1)</option>
+    <option value="professor">Quantitative Reasoning (T1)</option>
+    <option value="professor">Technological Fluency (T1)</option>
+    <option value="professor">Written Communication (T1)</option>
+    <option value="professor">American Experience (T2)</option>
+    <option value="professor">Conflict & Consensus (T2)</option>
+    <option value="professor">Creative Drive (T2)</option>
+    <option value="professor">Cultural Expression (T2)</option>
+    <option value="professor">Global Awareness (T2)</option>
+    <option value="professor">Natural World I (T2)</option>
+    <option value="professor">Natural World II (T2)</option>
+    <option value="professor">Mind & Body (T2)</option>
+    <option value="professor">Time & Place (T2)</option>
+    <option value="professor">Capstone (T3)</option>
+    <option value="professor">Writing (W)</option>
+  </select>
+</div>
+<br>
+<div class="center">
+  <h3 class="h1">Select Days:</h3>
+    <div>
+      <input type="checkbox" id="sunday" name="sunday"
+              checked>
+      <label for="sunday">Sunday</label>
     </div>
-    <br>
-    <div class="center">
-      <h3 class="h1">Select Credits:</h3>
-      <div class="dropdown">
-        <span class="h1">Credits</span>
-        <div class="dropdown-content">
-        <p class="h1">1</p>
-        <p class="h1">2</p>
-        <p class="h1">3</p>
-        <p class="h1">4</p>
-        
-        </div>
-      </div>
+    <div>
+      <input type="checkbox" id="monday" name="monday">
+      <label for="monday">Monday</label>
     </div>
-    <br>
-    <div class="center">
-      <h3 class="h1">Select Professor:</h3>
-      <div class="dropdown">
-        <span class="h1">Professor</span>
-        <div class="dropdown-content">
-        <p class="h1">Smith, John</p>
-        <p class="h1">Doe, Jane</p>
-        <p class="h1">Richards, Michael</p>
-        <p class="h1">Williams, Bob</p>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="center">
-      <h3 class="h1">Select Location:</h3>
         <div>
-          <input type="radio" id="InPerson" name="drone" value="InPerson"
-                 checked>
-          <label for="huey" class="h1">In-Person</label>
-        </div>
-        <div>
-          <input type="radio" id="Hybrid" name="drone" value="Hybrid">
-          <label for="dewey" class="h1">Hybrid</label>
-        </div>
-        <div>
-          <input type="radio" id="Remote" name="drone" value="Remote">
-          <label for="louie" class="h1">Remote</label>
-        </div>
+      <input type="checkbox" id="tuesday" name="tuesday">
+      <label for="tuesday">Tuesday</label>
     </div>
-    <br>
-    <div class="center">
-      <h3 class="h1">Select General Education Area:</h3>
-      <div class="dropdown">
-        <span class="h1">Gen-Ed Area</span>
-        <div class="dropdown-content">
-        <p class="h1">Writing</p>
-        <p class="h1">United States</p>
-        <p class="h1">Capstone</p>
-        </div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <div class="center">
-      <h3 class="h1">Select Days:</h3>
         <div>
-          <input type="checkbox" id="sunday" name="sunday"
-                 checked>
-          <label for="sunday">Sunday</label>
-        </div>
+      <input type="checkbox" id="wednesday" name="wednesday">
+      <label for="wednesday">Wednesday</label>
+    </div>
         <div>
-          <input type="checkbox" id="monday" name="monday">
-          <label for="monday">Monday</label>
-        </div>
-            <div>
-          <input type="checkbox" id="tuesday" name="tuesday">
-          <label for="tuesday">Tuesday</label>
-        </div>
-            <div>
-          <input type="checkbox" id="wednesday" name="wednesday">
-          <label for="wednesday">Wednesday</label>
-        </div>
-            <div>
-          <input type="checkbox" id="thursday" name="thursday">
-          <label for="thursday">Thursday</label>
-        </div>
-            <div>
-          <input type="checkbox" id="friday" name="friday">
-          <label for="friday">Friday</label>
-        </div>
-            <div>
-          <input type="checkbox" id="saturday" name="saturday">
-          <label for="saturday">Saturday</label>
-        </div>
+      <input type="checkbox" id="thursday" name="thursday">
+      <label for="thursday">Thursday</label>
     </div>
-    <br>
-    <br>
-    <div class="center">
-    <button type="button">Submit</button>
+        <div>
+      <input type="checkbox" id="friday" name="friday">
+      <label for="friday">Friday</label>
     </div>
-    <br>
+        <div>
+      <input type="checkbox" id="saturday" name="saturday">
+      <label for="saturday">Saturday</label>
+    </div>
+</div>
+<br>
+<br>
+<div class="center">
+<button type="button">Submit</button>
+</div>
+<br>
 </body>
 </html>
