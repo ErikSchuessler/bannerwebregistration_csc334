@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">SCSU BannerWeb</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Student</a></li>
+      <li><a href="#">Billing</a></li>
+      <li><a href="#">Help</a></li>
+    </ul>
+  </div>
+</nav>
+<table style="width:100%;padding:50px;table-layout:fixed;">
+    <tbody>
+        <tr>
+            <td>
+                <h3><a href="#" style="margin-left: 2%;">Student&nbsp;&nbsp;</a>/<a href="registrationHome.html">&nbsp;&nbsp;Registration</a>&nbsp;&nbsp;/&nbsp;&nbsp;Add / Drop</h3>
+            </td>
+            <td>
+                <h1 style="text-align:center; text-decoration: underline">Add / Drop</h1>
+            </td>
+            <td>
+            </td>
+        </tr>
+    </tbody>    
+</table>
+<div style="margin-left: 1%">
+<h1> Instructions </h1>
+<p> To add a course, enter the course registration number and hit add </p>
+<p> To drop a course, enter the course registration number and hit drop </p>
+<p> To clear current selection, hit reset <p>
+<p> Don't know the class CRN? Hit the CRN menu </p>
+<a href="degreeEval2.html"> Degree Evaluation  </a> <br>
+<a href="classSearch2.html"> Class Search </a> <br>
+
+<a href="registrationHome.html"> Back to Registration Home </a> <br>
+<br>
+<br>
+<button type="button" onclick= "showMenu() " id="button2"> CRN Menu </button>
+
+<br>
+<br>
+<p style="font-size:35px"> Class Worksheet </p>
+<p> CRN's</p>
+
+<form> <input type= "text" id="tb1"> <input type="text" id="tb2"> <input type="text" id="tb3">
+<input type= "text" id="tb4"> <input type="text" id="tb5"> </form>
+<br>
+
+
+<!--
+<button type="button" id="button"> Submit </button>
+<button type="button" id="button2"> Reset </button> -->
+
+
+<script>
+
+classList = [];
+
+function classAdd()
+{
+
+  var str1 = document.getElementById("tb1").value;
+//    if str1 != " "
+    classList.push(str1);
+  var str2 = document.getElementById("tb2").value;
+//    if str2 != " "
+    classList.push(str2);
+  var str3 = document.getElementById("tb3").value;
+//    if str3 != " "
+    classList.push(str3);
+  var str4 = document.getElementById("tb4").value;
+//    if str1 != " "
+    classList.push(str4);
+  var str5 = document.getElementById("tb5").value;
+//  if str1 != " "
+    classList.push(str5);
+  alert("These items have been added to your cart: "+str1+" "+str2+" "+str3+" "+str4+" "+str5);
+
+};
+
+function classDrop()
+{
+  var box1 = document.getElementById("tb1").value;
+  alert("This item has been removed from you cart: "+box1);
+
+};
+
+function reset()
+{
+  document.getElementById('tb1').value = " ";
+  document.getElementById('tb2').value = " ";
+  document.getElementById('tb3').value = " ";
+  document.getElementById('tb4').value = " ";
+  document.getElementById('tb5').value = " ";
+};
+
+function showClasses()
+{
+
+  alert("current schedule:" + classList);
+};
+
+
+function showMenu()
+{
+  var menu = [",CSC 200 - 1234\n", "CSC 235 - 5678\n", "CSC 400 - 2468\n"];
+  alert("COURSE CRN MENU:\n" + menu);
+};
+
+</script>
+<button type="button" onclick = "classAdd()" id = "addButton"> Add </button>
+<button type="button" onclick = "classDrop()" id = "dropbutton"> Drop </button>
+<button type="button" onclick = "reset()" id="resetbutton"> Reset </button>
+<button type="button" onclick = "showClasses()" id="show"> Show Classes </button>
+
+<script>
+
+</script>
+</div>
+</body>
+</html>
