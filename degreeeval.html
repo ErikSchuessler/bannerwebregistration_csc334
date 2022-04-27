@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Sam's Webpage</title>
+	<style>
+	* {
+	  box-sizing: border-box;
+	}
+
+	.column {
+	  float: left;
+	  padding: 10px;
+	  
+	}
+
+	.left, .right {
+	  width: 30%;
+	}
+
+	.middle {
+	  width: 40%;
+	}
+
+	.row:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+	
+	.centered {
+		
+	}
+	
+	.inner{
+		margin-left: auto;
+		margin-right: auto;
+		width: 50%;
+		text-align:center;
+	}
+	</style>
+	<script>
+	function dgeval()
+	{
+		 window.open("dg.html", '_blank');
+	} 
+	</script>
+  </head>
+  <body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+	<nav aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+		<li class="breadcrumb-item"><a href="#">Student</a></li>
+		<li class="breadcrumb-item"><a href="#">Registration</a></li>
+		<li class="breadcrumb-item active" aria-current="page">Degree Evaluation</li>
+	  </ol>
+	</nav>
+	<div class="row">
+	  <div class="column left"">
+		<h2> Curriculum Information </h2>
+		<br>
+		  <table class="table table-striped w-auto">
+			  <tbody>
+				<tr>
+				<th> Primary Curriculum</th>
+				<tr>
+				  <th scope="row">Program:</th>
+				  <td>BS-Computer Science</td>
+				</tr>
+				<tr>
+				  <th scope="row">Catalog Term:</th>
+				  <td>Fall 2020</td>
+				</tr>
+				<tr>
+				  <th scope="row">Level:</th>
+				  <td>Undergradute</td>
+				</tr>
+				<tr>
+				  <th scope="row">Campus:</th>
+				  <td>Main Campus</td>
+				</tr>
+				<tr>
+				  <th scope="row">College:</th>
+				  <td>College of Arts and Sciences</td>
+				</tr>
+				<tr>
+				  <th scope="row">Degree:</th>
+				  <td>Bachelor of Science</td>
+				</tr>
+				<tr>
+				</tr>
+			  </tbody>
+			</table>
+			<div>
+			
+			
+			
+			
+			</div>
+			<table class="table table-striped w-auto">
+			  <tbody>
+				<tr>
+				<th> Major/Minor Information </th>
+				<tr>
+				  <th scope="row">First Major:</th>
+				  <td>Computer Science</td>
+				</tr>
+				<tr>
+				  <th scope="row">Department:</th>
+				  <td>Computer Science</td>
+				</tr>
+				<tr>
+				  <th scope="row">Concentrations:</th>
+				  <td>General (Computer Science)</td>
+				</tr>
+				<tr>
+				  <th scope="row">Minors:</th>
+				  <td>Mathematics</td>
+				</tr>
+			  </tbody>
+			</table>
+		<br>	
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16"><path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"/></svg> <a href=#> Return to Registration </a>	
+	  </div>
+	  <div class="column middle">
+		<div class="inner">
+			<br>
+			<br>
+			<br>
+			<button type="button" class="btn btn-primary btn-lg" onclick="dgeval()">View Your Degree Evaluation</button>
+			<p > *Note: This will take open a new degree evaluation tab* </p>
+		</div>
+	  </div>
+	  <div class="column right centered">
+		<h1> Contact </h1>
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16"> <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/></svg> <a href="mailto:trumbleys1@southernct.edu" > Email your advisor </a>
+		<br>
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16"><path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/></svg> <a href="https://nam02.safelinks.protection.outlook.com/?url=https%3A%2F%2Fscsu.campus.eab.com%2Fa%2FptS7_Xlpdc&data=04%7C01%7Ctrumbleys1%40southernct.edu%7C07ece744c15a49149d0d08da0137389a%7C58736863d60e40ce95c60723c7eaaf67%7C0%7C0%7C637823633941690847%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C3000&sdata=kRMgz6V78dh0dGy130ivTS%2BVqFCm5nqeGgUF2ERLGFc%3D&reserved=0" target="_blank"> Schedule a meeting with your advisor </a>
+		<br>
+		<br>
+		<br>
+		<br>
+		<h1> Options </h1>
+		<p> Click <a href="2015dg.html" target="_blank"> HERE</a> if desired Catalog Term is prior to Fall 2015 </p>
+		</div>
+	</div>
+
+	
+  </body>
+</html>
