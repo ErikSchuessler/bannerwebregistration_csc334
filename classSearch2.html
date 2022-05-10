@@ -100,6 +100,14 @@
       <option value="credits">3</option>
       <option value="credits">4</option>
     </select>
+    &nbsp&nbspto&nbsp&nbsp 
+    <select name="credits" id="credits">
+      <option value="professor">All</option>
+      <option value="credits">1</option>
+      <option value="credits">2</option>
+      <option value="credits">3</option>
+      <option value="credits">4</option>
+    </select>
   </div>
   <hr>
   <div class="center">
@@ -154,8 +162,7 @@
         <label for="loc">All</label>
       </div>
       <div>
-        <input type="radio" id="InPerson" name="drone" value="InPerson"
-                checked>
+        <input type="radio" id="InPerson" name="drone" value="InPerson">
         <label for="loc">In-Person</label>
       </div>
       <div>
@@ -169,7 +176,10 @@
   </div>
   <hr>
   <div class="center">
-    <h3 class="h1">Select General Education:</h3>
+    <h3 class="h1">Select General Education Category:</h3>
+    <i>(e.g. Tier 1, Tier 2, Tier 3, & Writing Courses)</i>
+    <br>
+    <br>
     <select name="professor" id="professor">
       <option value="professor">All</option>
       <option value="professor">Critical Thinking (T1)</option>
@@ -194,9 +204,13 @@
   <hr>
   <div class="center">
     <h3 class="h1">Select Days:</h3>
+    <div>
+      <input type="checkbox" id="all days" name="all days">
+      <label for="sunday">All</label>
+    </div>
+    <br>
       <div>
-        <input type="checkbox" id="sunday" name="sunday"
-                checked>
+        <input type="checkbox" id="sunday" name="sunday">
         <label for="sunday">Sunday</label>
       </div>
       <div>
